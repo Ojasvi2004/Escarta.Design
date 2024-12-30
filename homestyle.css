@@ -1,0 +1,357 @@
+
+        body{
+            margin: 0;
+            background-color: black;
+        }
+        body::-webkit-scrollbar {
+         display: none;
+        }
+        a{
+            color:inherit;
+            text-decoration: none;
+        }
+        header{
+            opacity: 0.8;
+           background-color: rgb(40, 39, 39);
+           display: flex;
+           align-items: center;
+           justify-content: end;
+           position:fixed;
+           width: 100vw;
+           height: 10vh;
+           z-index: 2;
+          
+        }
+        .logo{
+            position: relative;
+            right: 16vw;
+            color: white;
+            font-weight: 600;
+            font-size: 35px;
+            letter-spacing: 6px;
+            align-items: start;
+        }
+        .navitem{
+            transition: all ease-in-out 450ms;
+            &:hover{
+                cursor: pointer;
+                color: #ff6347;
+                transform: scale(1.3);
+            }
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 5vw;
+            font-size: 130%;
+            font-weight: 600;
+            color: aliceblue;
+            font-family: "Poppins",monospace;
+            
+        }
+        .head{
+            margin-right: 15vw;
+        }
+        .first{
+            height: 100vh;
+            background-image:url(ImagesF/pexels-bohlemedia-1884581.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            letter-spacing: 5px;
+            font-weight:700;
+            color: rgb(255, 255, 255);
+            padding-left: 10vh;
+         
+        }   
+        .content{
+            font-size: 750%;
+            margin-top: 20%;
+        
+            
+         }
+         @keyframes cursor {
+            50%{border-color: transparent;}
+         }
+         @keyframes typing {
+            from{
+                width: 0;
+            }
+            to { width: 100%; } 
+         }
+         #tagline{
+            color: #fe2f0a;
+            font-size: 550%;
+            position: relative;
+            bottom: 16vh;
+            white-space: nowrap;
+            animation: typing 2s steps(27),
+            cursor .4s step-end infinite alternate;
+         }
+         .second{
+            margin-top: 10vh;
+
+            height: 130vh;
+            padding: 20px;
+            background-color: rgb(6, 6, 6);  
+          display: flex;
+          gap: 10vh;
+          flex-direction: column;
+          align-items: center;
+          
+         }
+         .p{
+            display: flex;
+            gap: 8vw;
+         }
+
+         .block{
+            height: 60vh;
+            width: 40vw;
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            background-size: cover;
+            border-radius: 15px;
+            transition: all ease-in-out 250ms;
+            &:hover{
+                cursor: pointer;
+                 transform: scale(1.05);
+            }
+         }
+         #block1{
+            background-image: url(ImagesF/pexels-pixabay-277319.jpg);
+        }
+        #block2{
+            background-image: url(ImagesF/pexels-martabranco-1395306.jpg);
+        }
+        #block3{
+            background-image: url(ImagesF/pexels-git-stephen-gitau-302905-1801279.jpg);
+        }
+        #block4{
+            background-image: url(ImagesF/pexels-pixabay-264726.jpg);
+        }
+        #cart{
+          font-size: 30px;
+        }
+        .feature{
+             height: 180vh;          
+             width: 100%;
+            
+        }
+        .featurehead{
+            border: 2px solid black;
+            width: 100%;
+            font-family: "Poppins",monospace;
+            text-align: center;
+            height: 15vh;
+            color: white;
+            
+        }
+        #fea{
+            font-size: 60px;
+            letter-spacing: 1vw;
+        }
+        #denim{
+            position: relative; 
+            font-weight: 600;
+            font-size: 23px;
+             bottom: 70px;
+             letter-spacing: 0.6vw;
+        }
+        .femalefeature{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20vh;
+            margin-bottom: 0;
+        }
+        .outfit{
+            height: 400px;
+            width: 318px;
+            margin: 20px;
+            border-radius: 15px;
+            background-size: cover;
+            transition: all ease-in-out 250ms;
+            &:hover{
+                cursor: pointer;
+                 transform: scale(1.05);
+            }
+        }
+        #outfit1{
+            background-image: url(ImagesF/f1.webp);
+        }
+        #outfit2{
+            background-image: url(ImagesF/f2.webp);
+        }
+        #outfit3{
+            background-image: url(ImagesF/f3.webp);
+        }
+        #outfit4{
+            background-image: url(ImagesF/f4.webp);
+        }
+        .malefeature{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10vh;
+            margin-bottom: 0;
+        }
+        #outfit5{
+            background-image: url(ImagesF/f5.webp);
+        }
+        #outfit6{
+            background-image: url(ImagesF/f6.webp);
+        }
+        #outfit7{
+            background-image: url(ImagesF/f7.webp);
+        }
+        #outfit8{
+            background-image: url(ImagesF/f8.webp);
+        }
+      
+        .third{
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            background-image: url(ImagesF/W_BC_FLIGHTMODE_Sept24_01_2048x1152_DI3.webp);
+            background-size:cover;
+            margin-top: 10vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            gap: 4vh;
+        }
+        .name{
+            font-size: 90px;
+            letter-spacing: 15px;
+            font-weight: 500;
+        }
+        .mod{
+            font-size: 50px;
+        }
+        .maison{
+            font-size: 26px;
+        }
+        .Exploremaison{
+            width: 200px;
+            height: 50px;
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            font-size: 25px;
+            transition: all ease-in-out 250ms;
+            &:hover{
+                cursor: pointer;
+                 transform: scale(1.05);
+            }
+        }
+        .sidetext{
+            width: 35vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5vh;
+            color: white;
+        }
+        .fourth{
+            height: 60vh;
+            width: 100%;
+            display: flex;
+            margin-top: 20vh;
+        }
+        .more{
+            font-size: 250%;
+        }
+        .ex{
+            font-size: 450%;
+        }
+        .smalltext{
+            font-size: 150%;
+        }
+        .slider{
+            width: 65vw ;
+            height: 50vh;
+            border: 2px solid white;
+        }
+        .fifth{
+            color: white;
+            height: 60vh;
+            width: 100%;
+            border-top: 1px solid white;
+            display: flex;
+            padding-top: 7vh;
+        
+        }
+        .bottom{
+            width: 25%;
+            height: auto;
+            font-family: "Poppins" ;
+        }
+        
+        .bottom_list{
+            list-style: none;
+        
+        }
+        
+        .bottom_list_item{
+            width: 12vw;
+            margin-top: 10px;
+            &:hover{
+                cursor: pointer;
+                color: #ff6347;
+            }
+        }
+        
+        #bottom_signup{
+            padding: 0px 20px;
+        }
+        
+        .gmail_box{
+            height: 5vh;
+            width: 15vw;
+            border: 1px solid;
+            color: white;
+            background: black;
+            border-color: white;
+            border-radius: 0;
+        }
+        .sp{
+            height: 5.2vh;
+            width: 7vw;
+            margin-left: 10px;
+            background-color: #ff6347;
+            border: 0;
+            border-radius: 5px;
+            font-size: 18px;
+             font-weight: 600;
+             color: white;
+             &:hover{
+                cursor: pointer;
+                 transform: scale(1.05);
+            }
+        }
+       
+        .sixth{
+            width: 100%;
+            height: 15vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5vw   ;
+            font-size: 30px;
+
+        }
+   i{
+        &:hover{
+            color: #ff6347;
+            cursor: pointer;
+             transform: scale(1.4);
+        }
+    }

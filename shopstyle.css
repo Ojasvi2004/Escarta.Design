@@ -1,0 +1,196 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgba(0, 0, 0, 0.9);
+} 
+body::-webkit-scrollbar{
+    display: none;
+}
+.top{
+    background-image: url(ImagesF/M_BC_Shoes_LV_Trainer_June2024_DI3.webp);
+    height: 130vh;
+    width: 100%;
+    background-size: cover;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+header{
+    opacity: 0.8;
+   background-color: rgb(40, 39, 39);
+   display: flex;
+   align-items: center;
+   justify-content:space-between;
+   position:fixed;
+   width: 100vw;
+   height: 10vh;
+   z-index: 2;
+  
+}
+.logo{
+    position: relative;
+    right: 0vw;
+    color: white;
+    font-weight: 600;
+    font-size: 35px;
+    letter-spacing: 6px;
+    align-items: start;
+}
+.navitem{
+    transition: all ease-in-out 450ms;
+    &:hover{
+        cursor: pointer;
+        color: #ff6347;
+        transform: scale(1.3);
+    }
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 5vw;
+    font-size: 130%;
+    font-weight: 600;
+    color: aliceblue;
+    font-family: "Poppins",monospace;
+    
+}
+/* .head{
+width: 100%;
+height:15%;
+background-color: aqua;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 55px ;
+letter-spacing: 1vw;
+background-color: rgb(0, 0, 0);
+font-weight: 500;
+color: white;
+opacity: 0.7;
+} */
+.sec{
+width: 100%;
+height: 200vh;
+padding: 10vh 0;
+}
+.horizon{
+width: 99.9%;
+height: 48vh;
+display: flex;
+gap: 5vw;
+justify-content: center;
+margin: 0;
+
+}
+.block{
+display: flex;
+flex-direction: column;
+width: 20vw;
+height: 48vh;
+background-size: cover;
+background-color: aliceblue;
+border-radius: 15px;
+transition: ease-in-out 240ms;
+&:hover{
+  transform: scale(1.05);
+  opacity: 0.6;
+}
+}
+.price{
+height: 8vh;
+width:auto ;
+text-align: center;
+font-family:'Courier New', Courier, monospace;
+}
+.item{
+height: 40vh;
+}
+.sec{
+height: auto;
+display: flex;
+flex-direction: column;
+gap: 7vh;
+}
+
+/* #s1{
+background-image: url(ImagesF/s1.avif);
+} */
+.fifth{
+    color: white;
+    height: 60vh;
+    width: 100%;
+    border-top: 1px solid white;
+    display: flex;
+    padding-top: 7vh;
+
+}
+.bottom{
+    width: 25%;
+    height: auto;
+    font-family: "Poppins" ;
+}
+
+.bottom_list{
+    list-style: none;
+
+}
+
+.bottom_list_item{
+    width: 12vw;
+    margin-top: 10px;
+    &:hover{
+        cursor: pointer;
+        color: #ff6347;
+    }
+}
+
+#bottom_signup{
+    padding: 0px 20px;
+}
+
+.gmail_box{
+    height: 5vh;
+    width: 15vw;
+    border: 1px solid;
+    color: white;
+    background: black;
+    border-color: white;
+    border-radius: 0;
+}
+.sp{
+    height: 5.2vh;
+    width: 7vw;
+    margin-left: 10px;
+    background-color: #ff6347;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+     font-weight: 600;
+     color: white;
+     &:hover{
+        cursor: pointer;
+         transform: scale(1.05);
+    }
+}
+
+.sixth{
+    width: 100%;
+    height: 15vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw   ;
+    font-size: 30px;
+
+}
+i{
+&:hover{
+    color: #ff6347;
+    cursor: pointer;
+     transform: scale(1.4);
+}
+}

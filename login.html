@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ESCARTA</title>
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="homestyle.css">
+
+    <style>
+    
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color:black;
+            color: #333;
+        }
+
+        .login-form {
+            background-color:  rgb(40, 39, 39);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .login-form input {
+            width: 92.5%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 40px;
+            letter-spacing: 2px;
+            font-size: 25px;
+            font-weight: 700;
+            background-color: #fe2f0a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-form button:hover {
+            background-color: #c91a07;
+        }
+
+        .login-form .signup-link {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .login-form .signup-link a {
+            color: #fe2f0a;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">ESCARTA</div>
+        <nav class="head">
+            <ul class="navbar">
+                <li class="navitem"><a href="Index.html">Home</a></li>
+                <li class="navitem"><a href="shopShoe.html">Shop</a></li>
+                <li class="navitem">Blog</li>
+                <li class="navitem">About</li>
+                <li class="navitem">Login</li>
+                <li class="navitem"><a href="cart.html"><i class='bx bx-cart' id="cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="login-container">
+        <div class="login-form">
+            <h1 style="text-align: center; color: white;">LOG IN</h1>
+            <form action="loginAction.php" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="password" name="password" placeholder="Enter your password" required>
+                <button type="submit">LOG IN</button>
+            </form>
+            <div class="signup-link">
+                <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

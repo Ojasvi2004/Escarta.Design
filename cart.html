@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - ESCARTA</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="homestyle.css">
+
+    <style>
+        body{
+            display: grid;
+            place-content: center;
+        }
+        .cart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: black;
+            color: white;
+            flex-direction: column;
+            width: 60vw;
+        }
+
+        .cart-items {
+            background-color: rgb(40, 39, 39);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 20px;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .cart-items h2 {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart-item-name {
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        .cart-item-price {
+            font-size: 16px;
+            color: #fe2f0a;
+        }
+
+        .cart-item-remove {
+            font-size: 14px;
+            color: #fe2f0a;
+            cursor: pointer;
+        }
+
+        .cart-total {
+            background-color: rgb(40, 39, 39);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cart-total p {
+            color: white;
+            font-size: 18px;
+        }
+
+        .cart-total .checkout-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #fe2f0a;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .cart-total .checkout-btn:hover {
+            background-color: #c91a07;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ESCARTA</div>
+        <nav class="head">
+            <ul class="navbar">
+                <li class="navitem"><a href="Index.html">Home</a></li>
+                <li class="navitem"><a href="shopShoe.html">Shop</a></li>
+                <li class="navitem">Blog</li>
+                <li class="navitem">About</li>
+                <li class="navitem"><a href="login.html">Login</a></li>
+                <li class="navitem"><a href="cart.html"><i class='bx bx-cart' id="cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cart-container">
+        <div class="cart-items">
+            <h2>Your Cart</h2>
+            <div class="cart-item">
+                <span class="cart-item-name">Red Sneakers</span>
+                <span class="cart-item-price">$80</span>
+                <span class="cart-item-remove">Remove</span>
+            </div>
+            <div class="cart-item">
+                <span class="cart-item-name">Blue Hoodie</span>
+                <span class="cart-item-price">$50</span>
+                <span class="cart-item-remove">Remove</span>
+            </div>
+            <div class="cart-item">
+                <span class="cart-item-name">Black Jeans</span>
+                <span class="cart-item-price">$40</span>
+                <span class="cart-item-remove">Remove</span>
+            </div>
+        </div>
+
+        <div class="cart-total">
+            <p>Total: $170</p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
